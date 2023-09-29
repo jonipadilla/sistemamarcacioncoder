@@ -13,8 +13,7 @@
     font-size: 40px;
     display: grid;
     grid-template-columns: 0.3fr 1fr;
-    grid-template-rows: 20px 50px 600px 70px;
-
+    grid-template-rows: 20px 50px 1100px 60px;
     grid-template-areas: 
     "header header"
     "nav nav"
@@ -46,11 +45,10 @@
     margin: 15px;
 }
 
-
-
 .aside {
     background-color: rgb(255, 255, 255);
     grid-area: aside;
+    background-size: auto;
 }
 .foto{
     margin: 110px 0px 0px 250px;
