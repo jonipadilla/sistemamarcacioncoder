@@ -1,154 +1,139 @@
-/*!-----FORMATO A TODO EL HTML----*/
 *{
     margin: 0;
     padding: 0;
 }
 
-/*!-----FORMATO CONTENEDOR----*/
-
+/* DISEÑO GRID CONTENEDOR GENERAL*/
 .grid-contenedor {
-    width: 80 px;
-    color: black;
-    margin: 0 auto;
-    font-size: 40px;
-    display: grid;
-    grid-template-columns: 0.3fr 1fr;
-    grid-template-rows: 20px 50px 1100px 60px;
-    grid-template-areas: 
-    "header header"
-    "nav nav"
-    "main aside"
-    "footer footer"
-    ;
+  font-family: Arial, sans-serif;
+  /* margin: 0;
+  padding: 0; */
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+      "header header"
+      "nav main"
+      "footer footer";
+  min-height: 100vh;
 }
 
-.encabezado {
-    background-color: rgb(22, 75, 96);
-    grid-area: header;
+/* FORMATO DE CABEZACERA */
+header {
+  background-color: #164b60;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  grid-area: header;
 }
-.encabezado h6 {
-    color: #fffefe;
+header h1{
+  font-size: 20px;
+}
+
+/* FORMATO DE MENU DE NAVEGACION */
+nav {
+  background-color: #1b6b93;
+  color: #fff;
+  padding: 10px;
+  min-height: 80px;
+  grid-area: nav;
+}
+
+/* FORMATO DE CONTENIDO */
+main {
+  padding: 20px;
+  grid-area: main;
+}
+
+/* FORMATO DE PIE */
+footer {
+  background-color: #164b60;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 13px;
+  grid-area: footer;
+}
+
+/* MEDIA QUERY PARA PANTALLAS PEQUEÑAS */
+@media screen and (max-width: 750px) {
+  .grid-contenedor {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto auto 1fr auto;
+      grid-template-areas:
+          "header"
+          "nav"
+          "main"
+          "footer";
   }
 
-.menu {
-    background-color:rgb(27, 107, 147);
-    grid-area: nav;
+  /* main {
+      min-height: auto;
+  } */
 }
 
-.contenido {
-    background-color: rgb(22, 75, 96);
-    grid-area: main;
-    color: white;
-    font-size: 30px;
-}
-.contenido nav{
-    margin: 15px;
-}
-
-.aside {
-    background-color: rgb(255, 255, 255);
-    grid-area: aside;
-    background-size: auto;
-}
+/* FOTO DE PORTADA */
 .foto{
-    margin: 110px 0px 0px 250px;
-    background-size: auto;
-    /* background-position: right; */
-    background-repeat: no-repeat;
-    display: flex;
-  }
-
-.pie {
-    background-color: rgb(27, 107, 147);
-    grid-area: footer;
-    padding: 25px;
-    font-size: 13px;
-    color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  height: auto;
+  /* width: auto; */
+  box-shadow: 0 10px 4px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(54, 54, 54, 0.19);
 }
 
-@media screen and (max-width:700px) {
-    .grid-contenedor {
 
-        width: 100%;
-        margin: 0 auto;
+/* FORMULARIO DE EMPLEADO */
 
-        grid-template-columns: 1fr;
-        grid-template-rows: 30px 50px 500px 60px;
-
-        grid-template-areas:
-            "header"
-            "nav"
-            "main"
-            "aside"
-            "aside"
-            "footer"
-        ;
-    }
+.agregarusuario{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 25px;
 }
 
-@media screen and (max-width:700px) {
-    .foto{
-        background-size: auto;
-        margin: 0 auto; 
-        justify-content: center;
-        display: flex;
-    }
-}
 
-.formularioEmpleado{
-    display: flex;
-    justify-content: center;
-    width: 650px;
-    display: flex;
-  }
-
-  @media screen and (max-width:700px) {
-    .formularioEmpleado{
-        background-size: auto;
-        margin: 0 auto; 
-        justify-content: center;
-        display: flex;
-    }
-}
-
-  /*BOTONES*/
-
-.botonAceptar {
-    background-color: #4CAF50; /* Green */
-    border: none;
-    color: white;
-    
-    padding: 15px 32px;
-    text-align: right;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    cursor: pointer;
-    float: left;
-  }
-  .botonAceptar:hover {
-    background-color: #3e8e41;
+@media screen and (max-width: 750px){
+  .agregarusuario{
+      flex-direction: column;
+      align-items: center;
   }
   
-  .botonCancelar {
-    background-color: #fa1c1c; /* Green */
-    border: none;
-    color: white;
-    margin: 0px 0px 0px 10px;
-    padding: 15px 32px;
-    text-align: left;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    cursor: pointer;
-    float: left;
-  }
-  .botonCancelar:hover {
-    background-color: #fa1111;
-  }
-  
-  .agruparEnFila{
-    display: flex;
-    /* justify-content: space-between; */
-  }
+}
 
+
+/*ANIMACION DE IMAGENES EN LA REGISTRACION*/
+.fotos-alta {
+  position: relative;
+  width: auto;
+}
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.432);
+  /* background-color: #008CBA; */
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.fotos-alta:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.text {
+  color: white;
+  text-align: center;
+  font-size: 15px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* -ms-transform: translate(-50%, -50%); */
+  align-items: center;
+}
