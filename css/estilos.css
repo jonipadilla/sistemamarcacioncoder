@@ -1,0 +1,94 @@
+@charset "UTF-8";
+.alta-formulario div, .listado div, .portada div {
+  display: flex;
+  align-items: center; }
+
+/* DISEÑO GRID CONTENEDOR GENERAL*/
+body div {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  grid-template-rows: auto auto auto;
+  grid-template-areas: "header header" "nav main" "footer footer";
+  min-height: 100vh; }
+
+.alta-formulario {
+  padding: 20px; }
+  .alta-formulario div {
+    min-height: 10vh;
+    font-size: 25px; }
+
+.animated-image {
+  transition: transform 0.3s; }
+
+.animated-image:hover {
+  transform: scale(1.05); }
+
+.listado {
+  padding: 20px; }
+  .listado div {
+    min-height: 100vh;
+    font-size: 15px;
+    display: inline-block; }
+
+/* FORMATO DE CABEZACERA */
+header {
+  background-color: #164b60;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  grid-area: header; }
+  header h1 {
+    font-size: 20px; }
+
+/* FORMATO DE MENU DE NAVEGACION */
+nav {
+  grid-area: nav;
+  height: auto;
+  background-color: #1b6b93; }
+  nav div {
+    padding: 10px;
+    min-height: 80px;
+    color: #fff; }
+    nav div nav {
+      width: fit-content; }
+
+/* FORMATO DE CONTENIDO */
+.portada {
+  padding: 20px;
+  grid-area: main; }
+  .portada div {
+    justify-content: center;
+    background-repeat: no-repeat;
+    min-height: 10vh;
+    box-shadow: 0 10px 4px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(54, 54, 54, 0.19); }
+
+footer {
+  background-color: #164b60;
+  padding: 10px 0;
+  font-size: 13px;
+  grid-area: footer; }
+  footer p {
+    color: #fff;
+    text-align: center; }
+
+/* MEDIA QUERY PARA PANTALLAS PEQUEÑAS */
+@media screen and (max-width: 750px) {
+  .grid-contenedor {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-areas: "header" "nav" "main" "footer"; }
+  /* main {
+        min-height: auto;
+    } */ }
+
+@media screen and (max-width: 750px) {
+  .alta-formulario div {
+    display: flex;
+    align-items: center;
+    flex-direction: column; }
+    .alta-formulario div div {
+      position: relative;
+      width: auto; } }

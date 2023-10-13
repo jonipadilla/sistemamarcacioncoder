@@ -4,12 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sistema de Asistencia</title>
-
-    <!-- Incluyo CSS -->
-    <link rel="stylesheet" href="../css/style.css">
     <!-- Incluyo Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    
+    <!-- Incluyo CSS -->
+    <link rel="stylesheet" href="../css/estilos.css">
 </head>
 
 <body>
@@ -21,19 +19,15 @@
         </header>
 
         <nav>
-        
             <div class="container-fluid">
                 <a class="navbar-brand" href="../index.html">INICIO</a>
                 <nav class="navbar navbar-expand-sm">
-                
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     
                     <div class="collapse navbar-collapse" id="collapsibleNavbar">
-               
                             <ul class="navbar-nav flex-column">
-
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                         aria-expanded="false">
@@ -44,7 +38,7 @@
                                         <li>
                                             <hr class="dropdown-divider">
                                         </li>
-                                        <li><a class="dropdown-item" href="./eempleado.html">Modificar</a></li>
+                                        <li><a class="dropdown-item" href="./mempleado.html">Modificar</a></li>
                                         <li>
                                             <hr class="dropdown-divider">
                                         </li>
@@ -79,52 +73,44 @@
                                 </li>
         
                             </ul>
-                       
                     </div>
-             
                 </nav>
             </div>
-        
-        
-        </nav>
-
-                
-        </nav>
+        </nav>     
 
         <main>
-            <h2>Registrar Nuevo Sector</h2>
-            <section class="agregarusuario">
-
-                <div class="fotos-alta">
-                    <img src="../img/alta-sector.jpg" class="img-fluid">
-                    <div class="overlay">
-                        <div class="text">Los sectores son divisiones dentro de una economía o de un mercado que resultan útiles para analizar el rendimiento o comparar empresas con otras con una producción y características similares.</div>
+            <section class="alta-formulario">
+                <h2>Registrar Nuevo Sector</h2>
+                <div class="contenedor-foto-formulario">
+                    <div class="container-fluid">
+                        <img src="../img/alta-sector.jpg" class="img-fluid animated-image" alt="refiere a los diferentes de una empresa">
+                        <!-- <div class="overlay">
+                            <div class="text">Los sectores son divisiones dentro de una economía o de un mercado que resultan
+                                útiles para analizar el rendimiento o comparar empresas con otras con una producción y
+                                características similares.</div>
+                        </div> -->
                     </div>
-                </div>
-            
-                <div class="container">
-                    <form>
-                        <div class="form-group">
+        
+                    <div class="container">
+                        <form class="form-group">
                             <label for="nombre">Nombre del Sector:</label>
                             <input type="text" class="form-control" id="nombre" placeholder="Ingresa Nombre">
-                        </div>
-                                                                        
-                        <p class="mb-4"></p>
-                        <button type="submit" class="btn btn-primary">Aceptar</button>
-                        <button type="submit" class="btn btn-primary">Cancelar</button>
-                    </form>
+        
+                            <p class="mb-4"></p>
+        
+                            <button type="submit" class="btn btn-primary">Aceptar</button>
+                            <button type="submit" class="btn btn-primary">Cancelar</button>
+                        </form>
+                    </div>
                 </div>
             </section>
-        
         </main>
 
         <footer>
-            <p>opyright: Padilla Jonatan &copy; 2023</p>
+            <p>Copyright: Padilla Jonatan &copy; 2023</p>
         </footer>
 
     </div>
-
-
 
     <!-- Incluyo Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"

@@ -1,0 +1,30 @@
+/* MEDIA QUERY PARA PANTALLAS PEQUEÑAS */
+@media screen and (max-width: 750px) {
+    .grid-contenedor {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto 1fr auto;
+        grid-template-areas:
+            "header"
+            "nav"
+            "main"
+            "footer";
+    }
+  
+    /* main {
+        min-height: auto;
+    } */
+  }
+
+@media screen and (max-width: 750px) {
+    .alta-formulario {
+        div {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            div {
+                position: relative;
+                width: auto;
+            }
+        }
+    }
+}

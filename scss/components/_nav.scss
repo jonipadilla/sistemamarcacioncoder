@@ -1,0 +1,24 @@
+/* FORMATO DE MENU DE NAVEGACION */
+nav {
+  grid-area: nav;
+  height: auto;
+  background-color: #1b6b93;
+  
+  div {
+    padding: 10px;
+    min-height: 80px;
+    color: #fff;
+    a { 
+    }
+    nav {
+      width: fit-content;
+      button {      
+      }
+
+      div {
+      }
+
+    }
+
+  }
+}
