@@ -2,6 +2,32 @@
 .portada {
   padding: 20px;
   grid-area: main;
+  
+  div {
+    @extend %flex-center;
+    min-height: 30vh;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    div {
+      i {
+        color: #99ce59;
+        font-size: 90px;
+      }
+      div {
+        text-align: center;
+        width: 230px;
+      }
+      flex-direction: column;
+      box-shadow: 0 10px 4px 0 rgba(0, 0, 0, 0.1),
+      0 6px 20px 0 rgba(54, 54, 54, 0.19);
+    }
+  }
+}
+
+/* FORMATO DE CONTENIDO DE INICIO*/
+.imagen-inicio {
+  padding: 20px;
+  grid-area: main;
 
   div {
     @extend %flex-center;
