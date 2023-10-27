@@ -2,7 +2,6 @@
 .portada {
   padding: 20px;
   grid-area: main;
-  
   div {
     @extend %flex-center;
     min-height: 30vh;
@@ -36,8 +35,49 @@
     justify-content: center;
     background-repeat: no-repeat;
     min-height: 10vh;
-    
     // width: auto;
     box-shadow: 0 10px 4px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(54, 54, 54, 0.19);
+  }
+}
+
+.opcion-menu {
+  padding: 20px;
+  grid-area: main;
+  div {
+      @extend %flex-center;
+      min-height: 12vh;
+      justify-content: space-around;
+      flex-wrap: wrap;
+  
+      div {
+        div {
+  
+          // flex-direction:row-reverse;
+          a {
+            color: rgb(255, 255, 255);
+            text-align: center;
+            padding: 5px;
+            width: 20vh;
+          }
+        }
+        div {
+          i {
+            // color: #ec1818;
+            font-size: 65px;
+            // margin-right: 2px;
+          }
+        }
+      }
+      flex-direction:row-reverse;
+    }
+}
+
+.listado{
+  padding: 20px;
+  grid-area: main;
+  div {
+    @extend %flex-center;
+    min-height: 50vh;
+    width: 90%;
   }
 }

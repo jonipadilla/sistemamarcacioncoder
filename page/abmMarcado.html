@@ -113,45 +113,116 @@
 
         <main>
             <section class="listado">
-                <h2>Listado de Empleados A Eliminar</h2>
+                <h2>Alta, Baja y Modificacion de Marcado de Tarjeta</h2>
+                <ul>
+                    <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#myModal-agregar"><a class="nav-link">Agregar Marcado</a></button>
+                </ul>
+                
                 <div>
+                                        
                     <table class="table table-Light table-striped">
                         <thead class="table-primary">
                             <tr>
-                                <th>Foto</th>
+                                <th>Fecha</th>
+                                <th>Hora</th>
                                 <th>Nombre</th>
                                 <th>Apellido</th>
-                                <th>Dni</th>
+                                <th>Legajo</th>
+                                <th>Seleccionar</th>
                                 <th>Seleccionar</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td><img src="../img/gabriel-saavedra.jpg" alt="Foto del empleado registrado"></td>
+                                <td>27-10-2023</td>
+                                <td>07:50 hs</td>
                                 <td>Gabriel</td>
                                 <td>Saavedra</td>
-                                <td>15976351</td>
-                                <td><button type="button" class="btn btn-outline-danger">Inhabilitar</button></td>
+                                <td>1597</td>
+                                <td><button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#myModal"><a class="nav-link">Modificar</a></button></td>
+                                <td><button type="button" class="btn btn-outline-danger">Baja</button></td>
+                                
                             </tr>
                             <tr>
-                                <td><img src="../img/Daniel-cuello.jpg" alt="Foto del empleado registrado"></td>
+                                <td>27-10-2023</td>
+                                <td>08:30 hs</td>
                                 <td>Daniel</td>
                                 <td>Cuello</td>
-                                <td>45879321</td>
-                                <td><button type="button" class="btn btn-outline-danger">Inhabilitar</button></td>
+                                <td>4587</td>
+                                <td><button type="button" class="btn btn-outline-primary">Modificar</button></td>
+                                <td><button type="button" class="btn btn-outline-danger">Baja</button></td>
                             </tr>
                             <tr>
-                                <td><img src="../img/Maria-reynoso.jpg" alt="Foto del empleado registrado"></td>
+                                <td>27-10-2023</td>
+                                <td>08:20 hs</td>
+                                <td>Daniel</td>
+                                <td>Cuello</td>
+                                <td>4587</td>
+                                <td><button type="button" class="btn btn-outline-primary">Modificar</button></td>
+                                <td><button type="button" class="btn btn-outline-danger">Baja</button></td>
+                            </tr>
+                            <tr>
+                                <td>27-10-2023</td>
+                                <td>10:20 hs</td>
                                 <td>Maria</td>
                                 <td>Reynoso</td>
-                                <td>18753147</td>
-                                <td><button type="button" class="btn btn-outline-danger">Inhabilitar</button></td>
+                                <td>1875</td>
+                                <td><button type="button" class="btn btn-outline-primary">Modificar</button></td>
+                                <td><button type="button" class="btn btn-outline-danger">Baja</button></td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
             </section>
-        
+
+            <section>
+                <div class="modal" id="myModal">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <!-- Modal body -->
+                            <div class="modal-body">
+            
+                                <form class="form-group">                                         
+                                    <label for="nombre">Hora de Ingreso:</label>
+                                    <input type="text" class="form-control" id="nombre" placeholder="Ingrese Hora">
+
+                                    <label for="nombre">Hora de Salida:</label>
+                                    <input type="text" class="form-control" id="nombre" placeholder="Ingrese Hora">
+                                    <p class="mb-4"></p>
+            
+                                    <button type="submit" class="btn btn-primary">Aceptar</button>
+                                    <button type="submit" class="btn btn-primary">Cancelar</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="modal" id="myModal-agregar">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-body">
+            
+                                <form class="form-group">    
+                                    <label for="nombre">Legajo:</label>
+                                    <input type="text" class="form-control" id="nombre" placeholder="Ingrese Legajo">                         
+                                    
+                                    <label for="nombre">Hora de Entrada:</label>
+                                    <input type="text" class="form-control" id="nombre" placeholder="Ingrese Hora">
+
+                                    <label for="nombre">Hora de Salida:</label>
+                                    <input type="text" class="form-control" id="nombre" placeholder="Ingrese Hora">
+                                    <p class="mb-4"></p>
+            
+                                    <button type="submit" class="btn btn-primary">Aceptar</button>
+                                    <button type="submit" class="btn btn-primary">Cancelar</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
 
         <footer>

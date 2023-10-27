@@ -66,3 +66,68 @@ body {
     }
 }
 
+// MODAL DE ACTUALIZAR STOCK
+.modal-content{
+  width: 500px;
+  min-height: 70vh;
+  align-items: center;
+}
+
+
+// COLOR DE ICONOS Y MENU DE LA PAGES GESTION
+.color-izquierdo-configuracion{
+  background-color: rgb(215, 40, 40);
+}
+.icon-configuracion{
+  color: rgb(237, 19, 19);
+}
+
+.color-izquierdo-asistencia{
+  background-color: #ff9500;
+}
+.icon-asistencia{
+  color: #e89725;
+}
+
+
+.color-izquierdo-justificacion{
+  background-color: rgb(34, 213, 76);
+}
+.icon-justificacion{
+  color: rgb(50, 207, 10);
+}
+
+.color-izquierdo-sector{
+  background-color: #ff9500;
+}
+.icon-sector{
+  color: #e89725;
+}
+
+.color-izquierdo-Stock-Elementos{
+  background-color: #ff9500;
+}
+.icon-Stock-Elementos{
+  color: #e89725;
+}
+
+.color-izquierdo-Gestion-Ausentismo{
+  background-color: #0252ff;
+}
+.icon-Gestion-Ausentismo{
+  color: #0818c4;
+}
+
+.color-izquierdo-Marcado{
+  background-color: #0252ff;
+}
+.icon-Gestion-Marcado{
+  color: #0818c4;
+}
+
+.color-izquierdo-Licencia{
+  background-color: rgb(34, 213, 76);
+}
+.icon-Gestion-Licencia{
+  color: rgb(50, 207, 10);
+}

@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.alta-formulario div, .listado div, .portada div, .imagen-inicio div {
+.alta-formulario div, .listado div, .portada div, .imagen-inicio div, .opcion-menu div {
   display: flex;
   align-items: center; }
 
@@ -35,6 +35,59 @@ body div {
     .listado div table tbody tr td img {
       width: 45px;
       height: 45px; }
+
+.modal-content {
+  width: 500px;
+  min-height: 70vh;
+  align-items: center; }
+
+.color-izquierdo-configuracion {
+  background-color: #d72828; }
+
+.icon-configuracion {
+  color: #ed1313; }
+
+.color-izquierdo-asistencia {
+  background-color: #ff9500; }
+
+.icon-asistencia {
+  color: #e89725; }
+
+.color-izquierdo-justificacion {
+  background-color: #22d54c; }
+
+.icon-justificacion {
+  color: #32cf0a; }
+
+.color-izquierdo-sector {
+  background-color: #ff9500; }
+
+.icon-sector {
+  color: #e89725; }
+
+.color-izquierdo-Stock-Elementos {
+  background-color: #ff9500; }
+
+.icon-Stock-Elementos {
+  color: #e89725; }
+
+.color-izquierdo-Gestion-Ausentismo {
+  background-color: #0252ff; }
+
+.icon-Gestion-Ausentismo {
+  color: #0818c4; }
+
+.color-izquierdo-Marcado {
+  background-color: #0252ff; }
+
+.icon-Gestion-Marcado {
+  color: #0818c4; }
+
+.color-izquierdo-Licencia {
+  background-color: #22d54c; }
+
+.icon-Gestion-Licencia {
+  color: #32cf0a; }
 
 /* FORMATO DE CABEZACERA */
 header {
@@ -92,6 +145,29 @@ nav {
     background-repeat: no-repeat;
     min-height: 10vh;
     box-shadow: 0 10px 4px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(54, 54, 54, 0.19); }
+
+.opcion-menu {
+  padding: 20px;
+  grid-area: main; }
+  .opcion-menu div {
+    min-height: 12vh;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row-reverse; }
+    .opcion-menu div div div a {
+      color: white;
+      text-align: center;
+      padding: 5px;
+      width: 20vh; }
+    .opcion-menu div div div i {
+      font-size: 65px; }
+
+.listado {
+  padding: 20px;
+  grid-area: main; }
+  .listado div {
+    min-height: 50vh;
+    width: 90%; }
 
 footer {
   background-color: #164b60;
