@@ -19,6 +19,8 @@
       <title>Sistema de Asistencia</title>
       <!-- FAVICON -->
      <link rel="shortcut icon" href="./img/favicon.ico" type="image/c-icon">
+     <!-- FAVICON -->
+     <link rel="shortcut icon" href="./img/favicon.ico" type="image/c-icon">
       <!-- PROTOCOLO OPEN GRAF -->
       <meta property="og:type" content="gestion">
       <meta property="og:title" content="Sistema de Asistencia">
@@ -111,64 +113,49 @@
                     </div>
                 </nav>
             </div>
-        </nav>
+        </nav>            
 
         <main>
-        
-            <section class="alta-formulario">
-                <h2>Registrar Nuevo Empleado</h2>
-                <div class="contenedor-foto-formulario">
-                    <div class="container-fluid">
-                        <img src="../img/alta-usuario.jpg" class="img-fluid animated-image"
-                            alt="Registrar un nuevo usuario en sistema">
-                    </div>
-        
-                    <div class="container">
-                        <form class="form-group">
-                            <!-- <div class="form-group"> -->
-                            <label for="nombre">Nombre:</label>
-                            <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre">
-                            <!-- </div> -->
-                            <p class="mb-4"></p>
-                            <!-- <div class="form-group"> -->
-                            <label for="apellido">Apellido:</label>
-                            <input type="text" class="form-control" id="apellido" placeholder="Ingresa tu apellido">
-                            <!-- </div> -->
-                            <p class="mb-4"></p>
-        
-                            <label for="inputState" class="form-label">Genero</label>
-                            <select id="inputState" class="form-select">
-                                <option>Opciones</option>
-                                <option>Femenino</option>
-                                <option>Masculino</option>
-                            </select>
-        
-                            <p class="mb-4"></p>
-        
-                            <!-- <div class="form-group"> -->
-                            <label for="correo">Correo Electrónico:</label>
-                            <input type="email" class="form-control" id="correo" placeholder="Ingresa tu correo electrónico">
-                            <!-- </div> -->
-                            <p class="mb-4"></p>
-                            <!-- <div class="form-group"> -->
-                            <label for="telefono">Edad:</label>
-                            <input type="tel" class="form-control" id="telefono" placeholder="Ingresa tu edad">
-                            <!-- </div> -->
-                            <p class="mb-4"></p>
-                            <!-- <div class="form-group"> -->
-                            <label for="telefono">Número de Teléfono:</label>
-                            <input type="tel" class="form-control" id="telefono" placeholder="Ingresa tu número de teléfono">
-                            <!-- </div> -->
-                            <label for="formFile" class="form-label">Cargar Foto</label>
-                            <input class="form-control" type="file" id="formFile">
-        
-                            <p class="mb-4"></p>
-                            <button type="submit" class="btn btn-primary">Aceptar</button>
-                            <button type="submit" class="btn btn-primary">Cancelar</button>
-                        </form>
-                    </div>
+            <section class="listado">
+                <h2>Inasistencia De Empleados Con Certificado</h2>
+                <div>
+                    <table class="table table-Light table-striped">
+                        <thead class="table-primary">
+                            <tr>
+                                <th>Foto</th>
+                                <th>Nombre</th>
+                                <th>Apellido</th>
+                                <th>Legajo</th>
+                                <th>Cantidad De Dias</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><img src="../img/gabriel-saavedra.jpg" alt="Foto del empleado registrado"></td>
+                                <td>Gabriel</td>
+                                <td>Saavedra</td>
+                                <td>1597</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td><img src="../img/Daniel-cuello.jpg" alt="Foto del empleado registrado"></td>
+                                <td>Daniel</td>
+                                <td>Cuello</td>
+                                <td>4587</td>
+                                <td>5</td>
+                            </tr>
+                            <tr>
+                                <td><img src="../img/Maria-reynoso.jpg" alt="Foto del empleado registrado"></td>
+                                <td>Maria</td>
+                                <td>Reynoso</td>
+                                <td>1875</td>
+                                <td>8</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </section>
+        
         </main>
 
         <footer>
@@ -176,8 +163,6 @@
         </footer>
 
     </div>
-
-
 
     <!-- Incluyo Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"

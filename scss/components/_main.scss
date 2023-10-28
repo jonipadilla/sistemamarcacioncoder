@@ -13,6 +13,11 @@
         font-size: 90px;
       }
       div {
+        a{
+          p{
+            margin: 15px;
+          }
+        }
         text-align: center;
         width: 230px;
       }
@@ -40,9 +45,13 @@
   }
 }
 
+
+// PERSONALIZA LA VISTA DEL MENU DE GESTION
 .opcion-menu {
   padding: 20px;
   grid-area: main;
+
+  min-height: 40vh;
   div {
       @extend %flex-center;
       min-height: 12vh;
@@ -72,12 +81,13 @@
     }
 }
 
+// PERSONALIZA LAS GRILLAS DE DATOS
 .listado{
   padding: 20px;
   grid-area: main;
   div {
     @extend %flex-center;
-    min-height: 50vh;
+    min-height: 80vh;
     width: 90%;
   }
 }

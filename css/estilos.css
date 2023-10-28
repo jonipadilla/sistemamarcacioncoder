@@ -135,6 +135,8 @@ nav {
       .portada div div div {
         text-align: center;
         width: 230px; }
+        .portada div div div a p {
+          margin: 15px; }
 
 /* FORMATO DE CONTENIDO DE INICIO*/
 .imagen-inicio {
@@ -148,7 +150,8 @@ nav {
 
 .opcion-menu {
   padding: 20px;
-  grid-area: main; }
+  grid-area: main;
+  min-height: 40vh; }
   .opcion-menu div {
     min-height: 12vh;
     justify-content: space-around;
@@ -166,7 +169,7 @@ nav {
   padding: 20px;
   grid-area: main; }
   .listado div {
-    min-height: 50vh;
+    min-height: 80vh;
     width: 90%; }
 
 footer {

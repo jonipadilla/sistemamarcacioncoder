@@ -114,61 +114,53 @@
         </nav>
 
         <main>
-        
+            
             <section class="alta-formulario">
-                <h2>Registrar Nuevo Empleado</h2>
+                <h2>Cargar De Ausentismo Justificado</h2>
                 <div class="contenedor-foto-formulario">
-                    <div class="container-fluid">
-                        <img src="../img/alta-usuario.jpg" class="img-fluid animated-image"
-                            alt="Registrar un nuevo usuario en sistema">
-                    </div>
-        
+                    <!-- <div class="container-fluid">
+                        <img src="../img/alta-usuario.jpg" class="img-fluid animated-image" alt="Registrar un nuevo usuario en sistema">
+                    </div> -->
                     <div class="container">
-                        <form class="form-group">
-                            <!-- <div class="form-group"> -->
-                            <label for="nombre">Nombre:</label>
-                            <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre">
-                            <!-- </div> -->
+                        <form class="form-group"> 
+                            <label for="nombre">Buscar Legajo:</label>
+                            <p class="mb-2"></p>
+                            <input type="text" class="form-control" id="nombre" placeholder="Ingresar Numero de Legajo">
+                            <p class="mb-2"></p>
+                            <button class="btn btn-success" type="button" id="button-addon1">Buscar</button>
                             <p class="mb-4"></p>
-                            <!-- <div class="form-group"> -->
-                            <label for="apellido">Apellido:</label>
-                            <input type="text" class="form-control" id="apellido" placeholder="Ingresa tu apellido">
-                            <!-- </div> -->
-                            <p class="mb-4"></p>
-        
-                            <label for="inputState" class="form-label">Genero</label>
+                            <label for="inputState" class="form-label">Tipo Ausentismo</label>
                             <select id="inputState" class="form-select">
                                 <option>Opciones</option>
-                                <option>Femenino</option>
-                                <option>Masculino</option>
+                                <option>Por Enfermedad</option>
+                                <option>Por Accidente</option>
+                                <option>Por Suspension</option>
+                                <option>Por Total</option>
                             </select>
-        
-                            <p class="mb-4"></p>
-        
-                            <!-- <div class="form-group"> -->
-                            <label for="correo">Correo Electrónico:</label>
-                            <input type="email" class="form-control" id="correo" placeholder="Ingresa tu correo electrónico">
+                            
                             <!-- </div> -->
                             <p class="mb-4"></p>
                             <!-- <div class="form-group"> -->
-                            <label for="telefono">Edad:</label>
-                            <input type="tel" class="form-control" id="telefono" placeholder="Ingresa tu edad">
+                            <label for="apellido">Descripcion:</label>
+                            <input type="text" class="form-control" id="apellido" placeholder="Ingresar Descripcion">
                             <!-- </div> -->
                             <p class="mb-4"></p>
-                            <!-- <div class="form-group"> -->
-                            <label for="telefono">Número de Teléfono:</label>
-                            <input type="tel" class="form-control" id="telefono" placeholder="Ingresa tu número de teléfono">
+                  
+                            <p class="mb-4"></p>
                             <!-- </div> -->
-                            <label for="formFile" class="form-label">Cargar Foto</label>
+
+                            <label for="formFile" class="form-label">Cargar Justificacion</label>
                             <input class="form-control" type="file" id="formFile">
-        
+
+
                             <p class="mb-4"></p>
                             <button type="submit" class="btn btn-primary">Aceptar</button>
                             <button type="submit" class="btn btn-primary">Cancelar</button>
                         </form>
                     </div>
-                </div>
+                    </div>
             </section>
+        
         </main>
 
         <footer>
